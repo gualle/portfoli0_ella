@@ -1,24 +1,61 @@
 <!doctype html>
 <html lang="en">
-
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Yutong Wu
+EMAIL: yutonw37@uci.edu
 -->
-
 <head>
-  <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <meta charset="utf-8" >
+  <meta name="author" content="Yutong Wu" >
+  <meta name="description" content="welcome" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>Yutong Wu — Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" >
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
+  <div class="layout">
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html">YUTONG WU</a>
+        <div class="links">
+          <a href="about.html">About</a>
+          <a href="design.html">Design</a>
+          <a href="photo.html">Art</a>
+          <a href="contact.html">Contact</a>
+          <a href="Yutong.pdf" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="slider " style="--count: 4;">
+      <figure style="animation-delay: calc(0 * (var(--slide-duration) + var(--fade-duration)));">
+        <img src="img/ZZ.png" alt="Yutong artwork" >
+      </figure>
+      <figure style="animation-delay: calc(1 * (var(--slide-duration) + var(--fade-duration)));">
+        <img src="img/DD.png" alt="Yutong artwork" >
+      </figure>
+      <figure style="animation-delay: calc(2 * (var(--slide-duration) + var(--fade-duration)));">
+        <img src="img/KK.JPG" alt="Yutong artwork" >
+      </figure>
+      <figure style="animation-delay: calc(3 * (var(--slide-duration) + var(--fade-duration)));">
+        <img src="img/CC.png" alt="Yutong artwork" >
+      </figure>
+    </div>
+
+    <main class="main">
+      <div class="top">
+      </div>
+    </main>
+  </div>
+
+  <p class="validator">
+    <a href="http://validator.w3.org/check?uri=referer">W3C validator</a>
   </p>
 </body>
 </html>

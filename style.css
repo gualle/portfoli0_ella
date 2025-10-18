@@ -1,0 +1,313 @@
+html, body { height: 100%; }
+
+
+body{
+  font-family: 'Courier New';
+  background-color: #fff;
+  color: #111;
+  margin: 0;
+}
+
+a{ color:#111; text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+.site-header { padding: 40px 30px 16px; }
+
+.nav{
+  display:flex;
+  align-items: baseline;
+  justify-content:space-between;
+  gap: 12px;
+  max-width: 5000px;
+}
+
+.brand{
+  font-size: clamp(20px, 10vw, 40px);
+  line-height: 1.2;
+  color:#000000;
+  text-decoration:none;
+  font-weight:350;
+  letter-spacing:.06em;
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  white-space:nowrap;
+  gap: 20px;
+  font-size: clamp(13px, 5vw, 16px);
+}
+
+
+html, body, .layout { overflow-x: hidden; }
+
+:root{
+  --slide-duration: 2.5s;
+  --fade-duration: 1s;
+}
+
+.slider{
+  position: relative;
+  width: 120svw;
+  margin-left: -10svw;
+  margin-right: auto;
+  height: 85vh;
+  overflow: hidden;    
+  border: 0;          
+}
+.slider figure{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: fadeSlide calc(var(--count) * (var(--slide-duration) + var(--fade-duration))) infinite;
+}
+.slider img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display:block;
+  border: 0;
+}
+
+
+@keyframes fadeSlide{
+  0%   { opacity: 0; }
+  2%   { opacity: 1; }
+  23%  { opacity: 1; }
+  25%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.main{
+  width: min(900px, 92vw);
+  margin: 24px auto;
+  padding: 16px;
+  text-align: center;
+}
+.pc{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:8px;
+}
+.validator{
+  text-align:center;
+  padding: 24px 0 32px;
+  font-size: 14px;
+  color:#666;
+}
+
+
+
+
+
+
+.about-main{
+  margin: 10px auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.about-title {
+  text-align: center; 
+  font-size: clamp(30px, 6vw, 40px); 
+  margin-bottom: 40px;
+  font-weight: 300;
+  letter-spacing: .1em;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.about-image-container {
+  width: min(300px, 80%); 
+  margin-bottom: 30px;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-text-content {
+  max-width: 600px; 
+  text-align: center; 
+}
+
+.about-text-content p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about-text-content .name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.about-text-content .role {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+
+.contact-main{
+  margin: 10px auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.contact-title {
+  text-align: center; 
+  font-size: clamp(30px, 6vw, 40px); 
+  margin-bottom: 40px;
+  font-weight: 300;
+  letter-spacing: .1em;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.contact-image-container {
+  width: min(100px, 80%); 
+  margin-bottom: 30px;
+}
+
+.contact-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-text-content {
+  max-width: 600px; 
+  text-align: center; 
+}
+
+.contact-text-content p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact-text-content .email {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.contact-text-content .email2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.contact-text-content .ins {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+.pdf-container {
+    width: min(700px, 90vw); 
+
+    height: 80vh; 
+
+    margin: 40px auto; 
+    
+    border: 1px solid #ddd; 
+    overflow: hidden;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.design-main {
+  width: 100%; 
+  padding: 10px 0; 
+}
+
+.design-title {
+  text-align: center;
+  font-size: clamp(40px, 5vw, 60px);
+  margin-bottom: 40px;
+  font-weight: 300;
+  letter-spacing: .08em;
+}
+
+
+
+
+.art-main {
+  width: 100%; 
+  padding: 10px 0; 
+}
+
+.art-title {
+  text-align: center;
+  font-size: clamp(40px, 5vw, 60px);
+  margin-bottom: 40px;
+  font-weight: 300;
+  letter-spacing: .08em;
+}
+
+.horizontal-scroll-gallery {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  padding: 0 30px 20px 30px; 
+}
+
+
+.horizontal-scroll-gallery {
+  scrollbar-width: none;
+}
+
+.gallery-item {
+  flex-shrink: 0;
+  width: auto; 
+  height: 60vh; 
+  margin-right: 20px; 
+  
+  margin-top: 0;
+  margin-bottom: 10px;
+  
+  position: relative; 
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  
+  object-fit: contain; 
+  display: block;
+}
+
+.gallery-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
